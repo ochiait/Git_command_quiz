@@ -4,17 +4,18 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'gitcommand/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gitcommand"
-  spec.version       = '0.0.0'
-  spec.authors       = ["YoshimiOkawa"]
-  spec.email         = ["weblab443@gmail.com"]
+  spec.name          = "Git_command_quiz"
+  spec.version       = '0.1.0'
+  spec.authors       = ["Tetsuya Ochiai"]
+  spec.email         = ["z15015to@aiit.ac.jp"]
 
   spec.summary       = %q{Write a short summary, because Rubygems requires one.}
   spec.description   = %q{Write a longer description or delete this line.}
   spec.files	     = ["lib/gitcommand.rb"]
-  spec.homepage      = "http://sample.com/"
+  spec.homepage      = "http://aiit.ac.jp/"
   spec.license       = "MIT"
 
+=begin
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
@@ -22,6 +23,7 @@ Gem::Specification.new do |spec|
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
+=end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
