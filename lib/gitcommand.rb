@@ -1,4 +1,5 @@
-require "gitcommand/version"
+# -*- coding: utf-8 -*-
+#require "gitcommand/version"
 
 module Gitcommand
 	def self.gittest
